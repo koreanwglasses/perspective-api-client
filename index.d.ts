@@ -37,7 +37,8 @@ declare module "perspective-api-client" {
         summaryScore: { value: number; type: "PROBABILITY" };
       };
     };
-    languages: ["en"];
+    languages: Language[];
+    detectedLanguages: Language[];
   };
 
   export default class Perspective {
